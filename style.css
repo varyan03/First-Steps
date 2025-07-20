@@ -363,3 +363,108 @@ footer {
     font-size: 1rem;
 
 }
+
+/* Responsive for Python section and containers */
+@media (max-width: 1024px) {
+    .container,
+    .python-section-content {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 24px;
+    }
+    .right-container,
+    .text-container,
+    .code-container {
+        min-width: 0;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .right-container h1 {
+        font-size: 3rem;
+        padding: 0 10px;
+    }
+    .code-container {
+        margin: 2rem 0;
+    }
+    .hello {
+        padding: 6vh 3vw 0 3vw;
+    }
+    #center {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+        padding: 16px;
+    }
+    #left, #right {
+        min-width: 0;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    #logo {
+        font-size: 3rem;
+        padding: 10px 12px;
+    }
+    #right h1 {
+        font-size: 3rem;
+        padding: 0 10px;
+    }
+    #button {
+        height: 60px;
+        width: 60px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+    .hello {
+        padding: 3vh 2vw 0 2vw;
+    }
+    .right-container h1 {
+        font-size: 2rem;
+        padding: 0 4px;
+    }
+    .code-container {
+        margin: 1rem 0;
+        font-size: 0.9rem;
+    }
+    .footer-socials {
+        gap: 18px;
+    }
+    .social-link i {
+        font-size: 1.5rem;
+    }
+    footer {
+        padding: 18px 0 8px 0;
+        font-size: 0.9rem;
+    }
+    #center {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        padding: 8px;
+    }
+    #logo {
+        font-size: 2rem;
+        padding: 6px 8px;
+    }
+    #left p, #right h1 {
+        font-size: 1.2rem;
+        padding: 0 4px;
+    }
+    #button {
+        height: 44px;
+        width: 44px;
+        font-size: 1.2rem;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+/* Make images and backgrounds scale well */
+img, .code-container, .text-container, .right-container {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
